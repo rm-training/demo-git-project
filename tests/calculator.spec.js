@@ -31,6 +31,17 @@ describe("Constructor Functions Exercise", function () {
     expect(c.get()).toBe(30);
   });
 
+  it("Should divide numbers", function () {
+    let c = new Calculator(10);
+    c.push(10);
+    c.add();
+    expect(c.get()).toBe(20);
+
+    c.push(2);
+    c.div();
+    expect(c.get()).toBe(10);
+  });
+
   it("Should add the numbers before it multiplies", function () {
     let d = new Calculator(10);
     d.push(2);
